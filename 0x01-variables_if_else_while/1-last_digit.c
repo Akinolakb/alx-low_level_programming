@@ -2,7 +2,6 @@
 #include <time.h>
 /* more headers goes there */
 #include <stdio.h>
-
 /* betty style doc for function main goes there */
 /**
  * main - Prints the last digit of a randomly generated number
@@ -10,6 +9,7 @@
  *
  * Return: Always 0
  */
+
 int main(void)
 {
 	int n;
@@ -19,7 +19,7 @@ int main(void)
 	/* your code goes there */
 	if((n %10)>5)
 	{
-		printf("Last digit of %d is %d and is greater than 5 \n", n,n % 10);
+		printf("Last digit of %d is %d and is greater than 5\n", n,n % 10);
 	}
 	else if ((n % 10) < 6 && (n % 10)!=0)
 	{
