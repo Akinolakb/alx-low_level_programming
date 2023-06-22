@@ -1,20 +1,45 @@
 #include "main.h"
 
+#include <stdio.h>
+
 /**
- * _abs - Computes the absolute value of an integer.
- * @c: The number to be computed.
- * Return: Absolute value of number or zero
+ * print_to_98 - Print all natural numbers from n to 98
+ * @n: The number to start printing from
+ * Return: Always 0.
  */
 
-int _abs(int c)
-
+void print_to_98(int n)
 {
-	if (c < 0)
+	if (n <= 98)
 	{
-		int abs_val;
-
-		abs_val = c * -1;
-		return (abs_val);
+		for (; n <= 98; n++)
+		{
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d, ", n);
+			}
+		}
 	}
-	return (c);
+	else
+	{
+		for (; n >= 98; n --)
+		{
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d, ", n);
+			}
+		}
+	}
 }
